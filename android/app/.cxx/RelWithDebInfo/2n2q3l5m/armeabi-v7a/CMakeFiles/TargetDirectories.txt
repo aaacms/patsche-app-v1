@@ -1,0 +1,2 @@
+C:/Users/amand/Documents/app-patsche/patsche-app/android/app/.cxx/RelWithDebInfo/2n2q3l5m/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/amand/Documents/app-patsche/patsche-app/android/app/.cxx/RelWithDebInfo/2n2q3l5m/armeabi-v7a/CMakeFiles/rebuild_cache.dir
