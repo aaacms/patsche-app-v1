@@ -43,7 +43,7 @@ class ProductDropdown extends StatelessWidget {
 
     if (selectedProductId != null && selectedProductId! > 0) {
       final selected =
-          products.firstWhere((doc) => doc.id == selectedProductId.toString());
+          products.firstWhere((doc) => int.parse(doc.id) == selectedProductId);
       preselectedValue = selected.data['nome'];
     }
 

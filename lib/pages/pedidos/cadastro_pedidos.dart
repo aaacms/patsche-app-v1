@@ -36,10 +36,11 @@ class _CadastroPedidosState extends State<CadastroPedidos> {
     'TRANSP TIPO 1',
     'TRANSP TIPO 2',
     'ÔNIBUS',
-    'VENDEDOR (11 leva)'
+    'VENDEDOR (11 leva)',
+    'OUTROS'
   ];
   String _selectedUnity = 'm';
-  final List<String> _unityOptions = ['un', 'Kg', 'm', 'pc', 'tb'];
+  final List<String> _unityOptions = ['un', 'Kg', 'm', 'pc', 'tb', 'cx'];
 
   // Lista de itens do pedido (cada item é um ItemEntry)
   final List<ItemEntry> _items = [];
@@ -318,7 +319,7 @@ class _CadastroPedidosState extends State<CadastroPedidos> {
   Widget _buildItemEntry(ItemEntry entry, int index) {
     if (!_isLoadingProducts && entry.codigo > 0) {
       final selected =
-          _products.firstWhere((doc) => doc.id == entry.codigo.toString());
+          _products.firstWhere((doc) => int.parse(doc.id) == entry.codigo);
       entry.product = selected;
     }
 
