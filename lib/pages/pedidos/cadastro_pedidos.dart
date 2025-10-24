@@ -40,7 +40,7 @@ class _CadastroPedidosState extends State<CadastroPedidos> {
     'OUTROS'
   ];
   String _selectedUnity = 'm';
-  final List<String> _unityOptions = ['un', 'Kg', 'm', 'pc', 'tb', 'cx'];
+  final List<String> _unityOptions = ['un', 'Kg', 'm', 'pc', 'tb', 'cx', 'L', 'Gl', 'Par', 'Lt'];
 
   // Lista de itens do pedido (cada item é um ItemEntry)
   final List<ItemEntry> _items = [];
